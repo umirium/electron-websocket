@@ -39,6 +39,9 @@ const electron = app;
 
 electron.on('ready', createWindow.bind(this, `http://localhost:${config.http_port}/`));
 electron.on('ready', createWindow.bind(this, `http://localhost:${config.http_port}/client`));
+// test url
+// electron.on('ready', createWindow.bind(this, `http://localhost:3000/vendingMachine/main`));
+// electron.on('ready', createWindow.bind(this, `https://google.co.jp`));
 
 // Quit when all windows are closed.
 electron.on('window-all-closed', () => {
