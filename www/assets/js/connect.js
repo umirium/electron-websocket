@@ -38,7 +38,6 @@ const Connect = {
     sendMessage: (data) => {
         if (connection_status === false) return;
 
-        const data = JSON.stringify(data);
-        connection.send(data);
+        connection.send(JSON.stringify(data));
     },
 };
